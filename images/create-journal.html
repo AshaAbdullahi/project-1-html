@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a journaling</title>
+</head>
+<body>
+    <h1>Create a journal</h1>
+    <form action="/api/v1/journals" method="post">
+       <label for="title">Title</label>
+       <input id="title" type="text" name="your fullname" type="text"><br>
+       <label for="journal title">Journal Title</label>
+       <input id="journal title" type="text" type="text" ><br>
+       <label for="journal">Journal-Entry</label>
+       <textarea name="journal-entry" id="journal" rows="10" cols="30" maxlength="150 words" minlength="10 words"></textarea> <br>
+       <label for="category">Journal Category</label>
+       <select name="Journal category" id="category">
+       <option value="task">Task</option>
+       <option value="note">Note</option>
+       <option value="idea">Idea</option>
+       <option value="others">Others</option>
+       <option value="goal">Goal</option>
+       <option value="habit">Habit</option>
+       <option value="memory">Memory</option>
+       <option value="event">Event</option>
+       <option value="mood">Modd</option>
+       </select><br>
+       <!-- <label for="pinaapple">Pinaaple</label>
+       <input id="pinaapple" type="checkbox" name="pinaapple">
+       <label for="mango">Mango</label>
+       <input id="mango" type="checkbox" name="mango">
+       <!-- checkbox -->
+       <!-- <input id="small" type="radio" name="size" value="m">
+       <label for="small">Small</label>
+       <input id="medium" type="radio" name="size" value="s">
+       <label for="medium">Medium</label>
+       <input id="large" type="radio"  name="size" value="l">
+       <label for="large">Large</label> -->
+       <!-- radio button -->
+       <button>Submit</button>
+    </form>
+</body>
+</html>
